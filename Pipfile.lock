@@ -1,0 +1,25 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "f07b5dbe738384ec16c4ca341d200d6875abf15505c99ffe1f0240ef710a9ab6"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.6"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "gps": {
+            "editable": true,
+            "path": "."
+        }
+    },
+    "develop": {}
+}

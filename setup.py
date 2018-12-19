@@ -1,8 +1,8 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='gps',
     version='0.0.0',
-    packages=['gps'],
+    packages=find_packages('.'),
     install_requires=[]
 )

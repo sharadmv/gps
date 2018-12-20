@@ -1,4 +1,5 @@
 """ This file defines a Gaussian mixture model class. """
+import tqdm
 import logging
 
 import numpy as np
@@ -151,7 +152,7 @@ class GMM(object):
                 self.sigma[i, :, :] = sigma + np.eye(Do) * 2e-6
 
         prevll = -float('inf')
-        for itr in range(max_iterations):
+        for itr in tqdm.trange(max_iterations, desc='Fitting GMM'):
             # E-step: compute cluster probabilities.
             logobs = self.estep(data)
 
